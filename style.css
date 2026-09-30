@@ -1,0 +1,144 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #fa03d1, #f6c0ee);
+        padding: 10px;
+    }
+    
+    .toDo {
+        width: 100%;
+        max-width: 500px;
+        background-color: rgba(252, 240, 245, 0.75);
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 35px;
+        box-shadow: 0 10px 30px #f4f8e8;
+        border: 5px solid rgba(227, 236, 192, 0.75)
+
+    }
+    
+    .toDo h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: #9b0696;
+        display: flex;
+        align-items: center;
+    }
+    
+    .toDo h1 img {
+        width: 80px;
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f1fad7;
+        border-radius: 30px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+    }
+    
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: transparent;
+        font-size: 16px;
+    }
+    
+    #tombol {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        background: #e839b9;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+    
+    #tombol:hover {
+        background: #e411cf;
+        color: #e01cd3;
+    }
+    
+    #listContainer li {
+        list-style: none;
+        padding: 12px 8px 10px 50px;
+        font-size: 14px;
+        border-bottom: 1px solid hsl(290, 58%, 83%);
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    #listContainer li::before {
+        content: "\2610";
+        position: absolute;
+        font-size: 22px;
+        left: 10px;
+        bottom: 6px;
+    }
+    
+    #listContainer li.done {
+        color: #f1fad7;
+        text-decoration: line-through;
+    }
+    
+    #listContainer li.done::before {
+        content: "\2611";
+        color: #e60aed;
+    }
+    
+    #listContainer li span {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        color: #b9018b;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    
+    #listContainer li span:hover {
+        background: #db0ba4;
+        color: #ba20a0;
+    }
+
+    .row {
+    display: flex;                  
+    align-items: center;            
+    justify-content: space-between; 
+    background-color: #f1fad7;      
+    border-radius: 30px;            
+    padding-left: 10px;
+    margin-bottom: 25px;            
+}
+
+.toDo p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #9b0696;
+        display: flex;
+        align-items: center;
+    }
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    color: #94038a;
+}
